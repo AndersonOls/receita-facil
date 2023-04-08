@@ -1,9 +1,10 @@
 import { View, StyleSheet, Text  } from "react-native";
 
-export function Ingredientes(){
+export function Ingredientes({data}){
     return(
         <View style={styles.container}>
-            <Text style={styles.name}>Massa</Text>
+            <Text style={styles.name}>{data.name}</Text>
+            <Text>{data.amount}</Text>
         </View>
     )
 }
